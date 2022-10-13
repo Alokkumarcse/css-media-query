@@ -1,0 +1,70 @@
+//creating color variables
+$color-1:#cdb4db; // for mobile screen
+$color-2:#ccb8a8; // for tablet screen
+$color-3:#52b788; // for Laptop screen
+$color-4:#bee1e6; // for Desktop screen
+
+// break points for various device
+$mobile:576px; // for mobile screen
+$tablet: 768px; //for tablet screen
+$laptop:992px;//for laptop screen
+$desktop:1200px;//for desktop screen
+
+
+// common for whole webpage elements
+*{
+    margin: 0px;
+    box-sizing: border-box;
+
+    body{
+        font-family: sans-serif;
+        font-size: 35px;
+    }
+}
+
+.container{
+    height:100vh ;
+    // *** content show in center 1-way
+    // display: flex;
+    // justify-content: center;
+    // align-items: center; 
+
+    // *** content show in center 2-way
+    display: grid;
+    place-content:center;
+    background-color: white;
+}
+
+#size{
+    position:absolute;
+    top:60%;
+    left:50%;
+    transform: translateX(-50%);
+    font-size: 20px;
+    color:rgb(211, 52, 52); 
+}
+
+@media screen and (max-width:$desktop){
+    .container{
+        background-color: $color-4;
+    }
+}
+
+@media screen and (max-width:$laptop) {
+    .container{
+        background-color: $color-3;
+    }
+}
+
+@media screen and (max-width:$tablet){
+    .container{
+        background-color: $color-2;
+    }
+}
+
+@media screen and (max-width: $mobile){
+    .container{
+        background-color: $color-1;
+    }
+}
+

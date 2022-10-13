@@ -1,0 +1,45 @@
+* {
+  margin: 0px;
+  box-sizing: border-box;
+}
+* body {
+  font-family: sans-serif;
+  font-size: 35px;
+}
+
+.container {
+  height: 100vh;
+  display: grid;
+  place-content: center;
+  background-color: white;
+}
+
+#size {
+  position: absolute;
+  top: 60%;
+  left: 50%;
+  transform: translateX(-50%);
+  font-size: 20px;
+  color: rgb(211, 52, 52);
+}
+
+@media screen and (max-width: 1200px) {
+  .container {
+    background-color: #bee1e6;
+  }
+}
+@media screen and (max-width: 992px) {
+  .container {
+    background-color: #52b788;
+  }
+}
+@media screen and (max-width: 768px) {
+  .container {
+    background-color: #ccb8a8;
+  }
+}
+@media screen and (max-width: 576px) {
+  .container {
+    background-color: #cdb4db;
+  }
+}/*# sourceMappingURL=index.css.map */
